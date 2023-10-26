@@ -1,11 +1,13 @@
 modules = ["python-3.10:v18-20230807-322e88b"]
 
 hidden = [".pythonlibs"]
-run = "cowsay Configure me!"
+run = "python3 main.py"
+
+entrypoint = "main.py"
 
 [nix]
 channel = "stable-23_05"
 
 [deployment]
-run = ["sh", "-c", "cowsay Configure me!"]
+build = "main.py"
 deploymentTarget = "cloudrun"

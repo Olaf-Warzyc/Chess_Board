@@ -1,8 +1,7 @@
 import pygame
 
 def Gamepieces(screen,listx,listy):
-  blackpawn = pygame.image.load('Pawn Black.png')
-  blackpawn = blackpawn.scale(0.5,0.5)
+  blackpawn = pygame.image.load('Chess_pdt60.png')
 
   for i in range (8):
-    screen.blit(blackpawn, (listx[i],listy[1]-15))
+    screen.blit(blackpawn, (listx[i],listy[1]))
