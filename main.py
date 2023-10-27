@@ -18,6 +18,7 @@ screen = pygame.display.set_mode((width, height))  # sets the
 pygame.display.set_caption('Chess')
 screen.fill(background_colour)  #fills the backround as white
 
+#changes 
 
 def drawGrid():
   i = 0
