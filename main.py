@@ -1,5 +1,5 @@
 import sys
-from Gamepieces import Gamepieces
+from Gamepieces import Piece
 
 import pygame
 from pygame.locals import QUIT
@@ -41,13 +41,20 @@ def drawGrid():
     i -= 1
 
   return (listx, listy)
+BP = Piece('b', 'p', 'BlackPawn.png')
+
+"""def board(listx,llisty):
+ board = {(0,0):pygame.image.load(BP.image)}
+ """
 
 
-drawGrid()
 print(listy, listx)
-Gamepieces(screen, listx, listy)
+
+
+
 
 while True:
+  drawGrid()
   for event in pygame.event.get():
     if event.type == QUIT:
       pygame.quit()
